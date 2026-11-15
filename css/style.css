@@ -1,0 +1,236 @@
+/* Configurações gerais */
+:root {
+    --cor-principal: #3157d5;
+    --cor-texto: #20243a;
+    --cor-secundaria: #667085;
+    --cor-fundo: #ffffff;
+    --cor-suave: #f4f6fc;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+}
+
+.navbar-brand {
+    color: var(--cor-texto);
+    font-size: 1.35rem;
+}
+
+.brand-dot {
+    color: var(--cor-principal);
+}
+
+.nav-link {
+    font-weight: 600;
+    margin-left: 12px;
+}
+
+.nav-link:hover {
+    color: var(--cor-principal);
+}
+
+.hero-slide {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.slide-one {
+    background: linear-gradient(120deg, #eef2ff, #f8faff);
+}
+
+.slide-two {
+    background: linear-gradient(120deg, #eaf7f5, #f7fbff);
+}
+
+.slide-three {
+    background: linear-gradient(120deg, #f4efff, #fff8fc);
+}
+
+.hero-slide h1,
+.hero-slide h2 {
+    max-width: 760px;
+    font-size: clamp(2.3rem, 5vw, 4.2rem);
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.hero-slide h1 span {
+    color: var(--cor-principal);
+}
+
+.eyebrow {
+    color: var(--cor-principal);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero-description {
+    color: var(--cor-secundaria);
+    font-size: 1.1rem;
+    max-width: 650px;
+    margin: 20px 0 28px;
+}
+
+.btn-primary {
+    background-color: var(--cor-principal);
+    border-color: var(--cor-principal);
+}
+
+.btn-primary:hover {
+    background-color: #2445b5;
+    border-color: #2445b5;
+}
+
+.section-padding {
+    padding: 90px 0;
+}
+
+.section-soft {
+    background-color: var(--cor-suave);
+}
+
+.section-heading {
+    margin-bottom: 42px;
+}
+
+.section-heading h2,
+.contact-box h2 {
+    font-size: clamp(2rem, 4vw, 2.7rem);
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.profile-photo {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    object-position: center 42%;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 12px 30px rgba(49, 87, 213, 0.18);
+}
+
+.profile-text {
+    color: var(--cor-secundaria);
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+.skill-card {
+    height: 100%;
+    min-height: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #e8ebf4;
+    border-radius: 14px;
+    padding: 18px 10px;
+}
+
+.skill-card strong {
+    color: var(--cor-texto);
+    font-size: 1.05rem;
+}
+
+.skill-card span {
+    color: var(--cor-secundaria);
+    font-size: 0.78rem;
+    margin-top: 5px;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e9ecf5;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(32, 36, 58, 0.04);
+
+    /* Recurso novo: transição suave ao passar o mouse */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Recurso novo: o card sobe levemente e ganha sombra no hover */
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(32, 36, 58, 0.12);
+}
+
+.project-number {
+    padding: 24px 24px 0;
+    color: #b5c2f5;
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+
+.project-card .card-body {
+    padding: 20px 24px 26px;
+}
+
+.project-tag {
+    display: inline-block;
+    background-color: #edf1ff;
+    color: var(--cor-principal);
+    border-radius: 30px;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.project-card .card-text {
+    color: var(--cor-secundaria);
+    line-height: 1.7;
+}
+
+.project-status {
+    color: #667085;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.contact-box {
+    max-width: 700px;
+    margin: auto;
+    padding: 45px 25px;
+    background-color: white;
+    border: 1px solid #e9ecf5;
+    border-radius: 20px;
+}
+
+.footer {
+    padding: 28px 0;
+    color: #dce3ff;
+    background-color: #20243a;
+}
+
+.footer small {
+    color: #aeb7d1;
+}
+
+@media (max-width: 767px) {
+    .hero-slide {
+        min-height: 420px;
+        padding: 65px 0;
+    }
+
+    .hero-slide h1,
+    .hero-slide h2 {
+        letter-spacing: -1px;
+    }
+
+    .section-padding {
+        padding: 65px 0;
+    }
+}

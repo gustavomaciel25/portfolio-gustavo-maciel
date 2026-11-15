@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Gustavo Maciel, estudante de Desenvolvimento de Sistemas.">
+    <title>Gustavo Maciel | Portfólio</title>
+
+    <!-- Bootstrap 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos próprios -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Menu de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#inicio">Gustavo<span class="brand-dot">.</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuNavegacao" aria-controls="menuNavegacao"
+                aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNavegacao">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Área de destaque / carousel -->
+        <section id="inicio" class="hero-section">
+            <div id="carouselDestaque" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="hero-slide slide-one">
+                            <div class="container">
+                                <p class="eyebrow">PORTFÓLIO PESSOAL</p>
+                                <h1>Olá, eu sou <span>Gustavo Maciel</span>.</h1>
+                                <p class="hero-description">Estudante de Desenvolvimento de Sistemas, construindo conhecimento e transformando ideias em projetos.</p>
+                                <a href="#projetos" class="btn btn-primary btn-lg">Conheça meus projetos</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="hero-slide slide-two">
+                            <div class="container">
+                                <p class="eyebrow">APRENDIZADO CONTÍNUO</p>
+                                <h2>Aprender, praticar e evoluir.</h2>
+                                <p class="hero-description">Cada atividade é uma oportunidade de desenvolver novas habilidades.</p>
+                                <a href="#habilidades" class="btn btn-primary btn-lg">Minhas habilidades</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="hero-slide slide-three">
+                            <div class="container">
+                                <p class="eyebrow">EM DESENVOLVIMENTO</p>
+                                <h2>O próximo projeto começa aqui.</h2>
+                                <p class="hero-description">Este espaço reúne minha trajetória e meus trabalhos na área de tecnologia.</p>
+                                <a href="#contato" class="btn btn-primary btn-lg">Entre em contato</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaque" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDestaque" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Perfil -->
+        <section id="perfil" class="section-padding">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">QUEM SOU</p>
+                    <h2>Sobre mim</h2>
+                </div>
+
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-4 text-center">
+                        <img src="imagens/perfil.jpg" alt="Foto de perfil de Gustavo Maciel"
+                            class="profile-photo img-fluid">
+                        <h3 class="h4 fw-bold mt-3 mb-1">Gustavo Maciel</h3>
+                        <p class="text-secondary">Estudante de Desenvolvimento de Sistemas</p>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="profile-text">
+                            <p>Sou estudante de Desenvolvimento de Sistemas e estou construindo minha trajetória na área de tecnologia.</p>
+                            <p>Tenho interesse em programação e desenvolvimento de soluções. Neste portfólio, apresento projetos e atividades realizados durante minha formação, mostrando um pouco do que venho aprendendo e praticando.</p>
+                            <p class="mb-0">Meu objetivo é continuar aprendendo, aprimorar minhas habilidades e transformar conhecimento em soluções úteis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades" class="section-padding section-soft">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <p class="eyebrow">CONHECIMENTOS</p>
+                    <h2>Habilidades e ferramentas</h2>
+                    <p class="text-secondary">Tecnologias e ferramentas que fazem parte dos meus estudos.</p>
+                </div>
+
+                <div class="row g-3 justify-content-center">
+                    <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><strong>Python</strong><span>Lógica e programação</span></div></div>
+                    <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><strong>Java</strong><span>Estudos de programação</span></div></div>
+                    <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><strong>HTML5</strong><span>Estrutura web</span></div></div>
+                    <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><strong>CSS3</strong><span>Estilização</span></div></div>
+                    <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><strong>Bootstrap</strong><span>Layouts responsivos</span></div></div>
+                    <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><strong>GitHub</strong><span>Versionamento</span></div></div>
+                </div>
+                <p class="small text-secondary text-center mt-3 mb-0">As habilidades apresentadas representam conhecimentos em desenvolvimento e estudo.</p>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section id="projetos" class="section-padding">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <p class="eyebrow">MEUS TRABALHOS</p>
+                    <h2>Projetos</h2>
+                    <p class="text-secondary">Algumas atividades desenvolvidas durante minha formação.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card project-card h-100">
+                            <div class="project-number">01</div>
+                            <div class="card-body">
+                                <span class="project-tag">Python</span>
+                                <h3 class="h5 card-title mt-3">Pesquisa de satisfação</h3>
+                                <p class="card-text">Programa desenvolvido em Python para coletar e organizar respostas de uma pesquisa de satisfação com participantes.</p>
+                                <a class="btn btn-outline-primary btn-sm mt-3" href="https://github.com/gustavomaciel25/pesquisa_satisfa--o" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+                                <span class="project-status">Projeto acadêmico</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card project-card h-100">
+                            <div class="project-number">02</div>
+                            <div class="card-body">
+                                <span class="project-tag">Python</span>
+                                <h3 class="h5 card-title mt-3">Controle de níveis de água</h3>
+                                <p class="card-text">Aplicação em Python que acompanha os níveis de um reservatório e utiliza indicações visuais para representar cada situação.</p>
+                                <a class="btn btn-outline-primary btn-sm mt-3" href="https://github.com/gustavomaciel25/controle_niveis_agua" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+                                <span class="project-status">Projeto acadêmico</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card project-card h-100">
+                            <div class="project-number">03</div>
+                            <div class="card-body">
+                                <span class="project-tag">Python</span>
+                                <h3 class="h5 card-title mt-3">Sistema de desconto em compras</h3>
+                                <p class="card-text">Programa em Python que calcula o desconto de uma compra conforme o valor informado, aplicando faixas de desconto.</p>
+                                <a class="btn btn-outline-primary btn-sm mt-3" href="https://github.com/gustavomaciel25/desconto_compra" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+                                <span class="project-status">Projeto acadêmico</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <p class="small text-secondary text-center mt-4 mb-0">Os projetos serão complementados com links para os respectivos repositórios no GitHub.</p>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="section-padding section-soft">
+            <div class="container">
+                <div class="contact-box text-center">
+                    <p class="eyebrow">VAMOS CONVERSAR</p>
+                    <h2>Entre em contato</h2>
+                    <p class="text-secondary mb-4">Este espaço será atualizado com meus canais profissionais.</p>
+                    <!-- Substitua os links abaixo pelos seus contatos reais. -->
+                    <a class="btn btn-primary me-2 mb-2"
+   href="https://mail.google.com/mail/?view=cm&fs=1&to=gustavo.maciel25%40gmail.com"
+   target="_blank"
+   rel="noopener noreferrer">E-mail</a>
+                    <a class="btn btn-outline-primary mb-2" href="https://github.com/gustavomaciel25" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="mb-1">Desenvolvido por <strong>Gustavo Maciel</strong></p>
+            <small>Portfólio pessoal • 2026</small>
+        </div>
+    </footer>
+
+    <!-- JavaScript do Bootstrap: necessário para o menu e o carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
